@@ -12,13 +12,13 @@
 | **Ảnh chụp màn hình deployment/test** | [screenshots/](screenshots/) |
 | **Sản phẩm cuối ( Part 6) — Source code** | https://github.com/oggishi/Day08_RAG_pipeline_cohort2 |
 | **Sản phẩm cuối — Live Demo (GitHub Pages)** | https://oggishi.github.io/Day08_RAG_pipeline_cohort2 |
-| **Sản phẩm cuối — Backend API (Render)** | ⏳ xem [DEPLOYMENT.md](DEPLOYMENT.md#4-final-project--sản-phẩm-nộp-exercise-6--part-6) |
+| **Sản phẩm cuối —  (Render)** | https://luatmatuy-api.onrender.commd#4-final-project--sản-phẩm-nộp-exercise-6--part-6 |
 | **Public URL Exercise 3.1 (Railway)** | https://secure-balance-production-6666.up.railway.app/ |
 | **Public URL Exercise 3.2 (Render)** | https://ai-agent-7keu.onrender.com |
 
 
 ## Cấu Trúc Project
-
+    
 ```
 day12_ha-tang-cloud_va_deployment/
 ├── 01-localhost-vs-production/     # Section 1: Dev ≠ Production
