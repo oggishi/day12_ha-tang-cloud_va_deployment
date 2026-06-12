@@ -46,6 +46,11 @@ services:
     name: agent-cache
     plan: free
     maxmemoryPolicy: allkeys-lru
+    ipAllowList:
+      # Chỉ web service nội bộ trong Render được truy cập.
+      # 0.0.0.0/0 = cho phép tất cả (chỉ nên dùng cho demo/lab).
+      - source: 0.0.0.0/0
+        description: everywhere
 
 # ============================================================
 # Cách deploy:
