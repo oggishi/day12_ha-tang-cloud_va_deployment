@@ -348,6 +348,8 @@ Log Nginx ghi lại request `POST /ask HTTP/1.1" 200`, log agent cho thấy requ
 
 ###  Exercise 3.1: Deploy Railway (15 phút)
 
+https://secure-balance-production-6666.up.railway.app/
+
 ```bash
 cd ../../03-cloud-deployment/railway
 ```
@@ -419,7 +421,6 @@ cd ../render
 <details>
 <summary> Trả lời</summary>
 
-⚠️ **Lưu ý:** thư mục `03-cloud-deployment/render/` hiện chỉ có `render.yaml`, thiếu `app.py` và `requirements.txt` (README mô tả cấu trúc đầy đủ nhưng 2 file này chưa tồn tại trong repo) — cần copy từ `railway/app.py` và `railway/requirements.txt` sang trước khi deploy thật.
 
 **So sánh `render.yaml` vs `railway.toml`:**
 
@@ -434,7 +435,8 @@ cd ../render
 | **Plan/Pricing tier** | Không có trong config | `plan: free` — khai báo ngay trong service |
 | **Env vars** | Đặt qua CLI/dashboard, không có trong file | Khai báo cấu trúc trong file: `sync: false` (set thủ công), `generateValue: true` (Render tự sinh secret) |
 | **Auto-deploy** | Mặc định khi `railway up` hoặc kết nối GitHub | `autoDeploy: true` — khai báo rõ trong YAML |
-| **Trigger deploy** | CLI (`railway up`) — push từ máy local | Chủ yếu qua GitHub push (Blueprint sync) |
+| **Trigger deploy** | CLI (`railway up`) — push từ máy local | Chủ yếu qua GitHub push (Blueprint sync, "All future updates to your Blueprint file will be synced automatically") |
+| **Security config** | Không có | `ipAllowList` bắt buộc cho Redis — kiểm soát IP nào được kết nối vào database |
 
 **Kết luận:** `render.yaml` mang tính **declarative/IaC** hơn — toàn bộ infrastructure (web service + Redis) được định nghĩa và version-control trong 1 file, Render tự sync khi push GitHub. `railway.toml` tập trung vào **build/deploy behavior của 1 service**, còn infrastructure khác (database, domain, env vars) quản lý qua CLI/dashboard riêng.
 
