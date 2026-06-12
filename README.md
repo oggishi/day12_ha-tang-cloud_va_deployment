@@ -10,7 +10,7 @@
 | **Báo cáo đầy đủ** (code, test output, log, bảng so sánh từng exercise) | [MISSION_ANSWERS.md](MISSION_ANSWERS.md) |
 | **Thông tin deployment & public URL** | [DEPLOYMENT.md](DEPLOYMENT.md) |
 | **Ảnh chụp màn hình deployment/test** | [screenshots/](screenshots/) |
-| **Sản phẩm cuối (Exercise 6 / Part 6) — Source code** | https://github.com/oggishi/Day08_RAG_pipeline_cohort2 |
+| **Sản phẩm cuối ( Part 6) — Source code** | https://github.com/oggishi/Day08_RAG_pipeline_cohort2 |
 | **Sản phẩm cuối — Live Demo (GitHub Pages)** | https://oggishi.github.io/Day08_RAG_pipeline_cohort2 |
 | **Sản phẩm cuối — Backend API (Render)** | ⏳ xem [DEPLOYMENT.md](DEPLOYMENT.md#4-final-project--sản-phẩm-nộp-exercise-6--part-6) |
 | **Public URL Exercise 3.1 (Railway)** | https://secure-balance-production-6666.up.railway.app/ |
